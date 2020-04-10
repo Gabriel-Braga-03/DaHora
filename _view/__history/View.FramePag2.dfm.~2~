@@ -1,0 +1,9 @@
+inherited FramePag2: TFramePag2
+  object Label1: TLabel
+    Left = 264
+    Top = 120
+    Width = 41
+    Height = 13
+    Caption = 'Pagina 2'
+  end
+end

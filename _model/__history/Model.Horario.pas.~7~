@@ -1,0 +1,16 @@
+unit Model.Horario;
+
+interface
+    type
+        THorario = class
+        private
+        // Atributos
+            Pedit;
+        public
+        // Propriedades
+
+        end;
+
+implementation
+
+end.

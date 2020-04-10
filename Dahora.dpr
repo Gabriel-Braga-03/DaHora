@@ -1,0 +1,20 @@
+program Dahora;
+
+uses
+  Vcl.Forms,
+  View.Inicial in '_view\View.Inicial.pas' {Inicial},
+  View.Frames.LinkPrime in '_view\_frames\View.Frames.LinkPrime.pas' {LinkPrime: TFrame},
+  View.Modals.CriarArquivo in '_view\_modals\View.Modals.CriarArquivo.pas' {CriarArquivo},
+  View.Utils in '_view\View.Utils.pas',
+  Controller.Inicial in '_controller\Controller.Inicial.pas',
+  Model.FileManager in '_model\Model.FileManager.pas',
+  Model.Horario in '_model\Model.Horario.pas';
+
+{$R *.res}
+
+begin
+    Application.Initialize();
+    Application.MainFormOnTaskbar := True;
+    Application.CreateForm(TInicial, Inicial);
+  Application.Run();
+end.
