@@ -1,0 +1,16 @@
+unit Model.Professor;
+
+interface
+    uses Model.Entidade;
+
+    type
+        TProfessor = class (TEntidade)
+            private
+                Fnome: String;
+            public
+                property nome: String read Fnome write Fnome;
+        end;
+
+implementation
+
+end.

@@ -83,8 +83,8 @@ var
     h: THorario;
 begin
     // Temporário para testes
-    h := THorario.Create();
-    ShowMessage(h.saveWithJson());
+    
+    ShowMessage(turma.toJsonObject().Format());
 end;
 
 end.

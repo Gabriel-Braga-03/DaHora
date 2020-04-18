@@ -20,7 +20,6 @@ interface
         THorario = class
         private
             // Atributos
-            Fnome: String;
             Faulas_pd: Byte;
             Fturmas: TArrayOfTurma;
             Fprofessores: TArrayOfProfessor;
@@ -29,8 +28,6 @@ interface
             Faulas: TArrayOfAula;
         public
             // Propriedades
-            property nome: String read Fnome write Fnome;
-            property aulas_pd: Byte read Faulas_pd write Faulas_pd;
             property turmas: TArrayOfTurma read Fturmas write Fturmas;
             property professores: TArrayOfProfessor read Fprofessores write Fprofessores;
             property materias: TArrayOfMateria read Fmaterias write Fmaterias;

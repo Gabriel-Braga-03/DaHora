@@ -1,0 +1,21 @@
+unit Model.Lotacao;
+
+interface
+    uses
+        Model.Entidade,
+        Model.Turma,
+        Model.Professor,
+        Model.Materia;
+
+    type
+        TLotacao = class (TEntidade)
+            private
+                Fch: Byte;
+                Ftur_id: Word;
+                Fprof_id: Word;
+                Fmat_id: Word;
+        end;
+
+implementation
+
+end.

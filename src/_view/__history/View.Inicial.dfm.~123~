@@ -599,7 +599,7 @@ object Inicial: TInicial
           Width = 174
           Height = 47
           Caption = 'Importar'
-          ExplicitWidth = 64
+          ExplicitWidth = 67
         end
       end
     end
@@ -651,7 +651,7 @@ object Inicial: TInicial
           Width = 174
           Height = 47
           Caption = 'Exportar'
-          OnClick = lk_exportlb_nomeClick
+          ExplicitWidth = 66
         end
       end
     end
@@ -705,7 +705,7 @@ object Inicial: TInicial
           Height = 47
           Caption = 'Criar Novo'
           OnClick = lk_criarlb_nomeClick
-          ExplicitWidth = 82
+          ExplicitWidth = 81
         end
       end
     end
@@ -734,8 +734,8 @@ object Inicial: TInicial
         Font.Style = [fsBold, fsItalic]
         ParentFont = False
         Layout = tlCenter
-        ExplicitWidth = 152
-        ExplicitHeight = 17
+        ExplicitWidth = 166
+        ExplicitHeight = 18
       end
     end
   end
@@ -783,8 +783,8 @@ object Inicial: TInicial
         Font.Style = []
         ParentFont = False
         Layout = tlCenter
-        ExplicitWidth = 218
-        ExplicitHeight = 28
+        ExplicitWidth = 226
+        ExplicitHeight = 29
       end
     end
   end

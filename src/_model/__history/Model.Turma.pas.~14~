@@ -1,0 +1,18 @@
+unit Model.Turma;
+
+interface
+    uses
+        Model.Entidade,
+        System.Json,
+        REST.Json;
+    type
+        TTurma = class(TEntidade)
+            private
+
+            public
+
+        end;
+
+implementation
+
+end.

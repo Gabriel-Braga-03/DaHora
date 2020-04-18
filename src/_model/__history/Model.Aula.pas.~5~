@@ -1,0 +1,18 @@
+unit Model.Aula;
+
+interface
+    uses Model.Entidade;
+
+    type
+        TAula = class (Tentidade)
+            private
+                Fordem: Byte;
+                Fds: Byte;
+                Flot_id: Word;
+            public
+
+        end;
+
+implementation
+
+end.

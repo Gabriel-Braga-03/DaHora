@@ -12,9 +12,7 @@ uses
   Model.Turma in '_model\Model.Turma.pas',
   Model.Entidade in '_model\Model.Entidade.pas',
   Model.Materia in '_model\Model.Materia.pas',
-  Model.Professor in '_model\Model.Professor.pas',
-  Model.Lotacao in '_model\Model.Lotacao.pas',
-  Model.Aula in '_model\Model.Aula.pas';
+  Model.Professor in '_model\Model.Professor.pas';
 
 {$R *.res}
 

@@ -1,0 +1,16 @@
+unit Model.Materia;
+
+interface
+    uses Model.Entidade;
+
+    type
+        TMateria = class (TEntidade)
+            private
+                Fnome: String;
+            public
+                property nome: String read Fnome write Fnome;
+        end;
+
+implementation
+
+end.

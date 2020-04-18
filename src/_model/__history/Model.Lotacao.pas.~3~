@@ -1,0 +1,17 @@
+unit Model.Lotacao;
+
+interface
+    uses
+        Model.Entidade,
+        Model.Turma,
+        Model.Professor,
+        Model.Materia;
+
+    type
+        TLotacao = class (TEntidade)
+
+        end;
+
+implementation
+
+end.

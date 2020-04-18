@@ -19,7 +19,7 @@ interface
         View.Utils,
         View.Modals.CriarArquivo
         {temporário}
-        ,Model.Horario,
+        ,Model.Turma,
         REST.Json;
 
     type
@@ -80,11 +80,11 @@ implementation
     end;
 procedure TInicial.lk_exportlb_nomeClick(Sender: TObject);
 var
-    h: THorario;
+    turma: TTurma;
 begin
     // Temporário para testes
-    h := THorario.Create();
-    ShowMessage(h.saveWithJson());
+    
+    ShowMessage(turma.toJsonObject().Format());
 end;
 
 end.

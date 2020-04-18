@@ -1,0 +1,49 @@
+unit Model.Horario;
+
+interface
+    uses
+        Model.Turma,
+        Model.Professor,
+        Model.Materia,
+        Model.Lotacao,
+        Model.Aula,
+        REST.Json;
+
+    type
+        // Tipos em Arrays
+        TArrayOfTurma = array of TTurma;
+        TArrayOfProfessor = array of TProfessor;
+        TArrayOfMaterias = array of TMateria;
+        TArrayOfLotacao: array of TLotacao;
+        TArrayOfAula: array of TAula;
+
+        THorario = class
+        private
+            // Atributos
+            Faulas_pd: Byte;
+            Fturmas: array of TTurma;
+            Fprofessores: array of TProfessor;
+            Fmaterias: array of TMateria;
+            Flotacoes: array of TLotacao;
+            Faulas: array of TAula;
+        public
+            // Propriedades
+            property turmas: array of TTurma read Fturmas write Fturmas;
+            property professores: array of TProfessor read Fprofessores write Fprofessores;
+            property materias: array of TMateria read Fmaterias write Fmaterias;
+            property lotacoes: array of TLotacao read Flotacoes write Flotacoes;
+            property aulas: array of TAula read Faulas write Faulas;
+
+            // Métodos Especiais
+            function saveWithJson(): String;
+        end;
+
+implementation
+// THorario (Implementações)
+    // Função para salvar como Json
+    function THorario.saveWithJson(): String;
+    begin
+        Result := TJson.ObjectToJsonString(Self);
+    end;
+
+end.

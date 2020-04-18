@@ -148,17 +148,21 @@
         </DCCReference>
         <DCCReference Include="_view\_frames\View.Frames.LinkPrime.pas">
             <Form>LinkPrime</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
         <DCCReference Include="_view\_modals\View.Modals.CriarArquivo.pas">
             <Form>CriarArquivo</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="_view\View.Utils.pas"/>
         <DCCReference Include="_controller\Controller.Inicial.pas"/>
         <DCCReference Include="_model\Model.FileManager.pas"/>
         <DCCReference Include="_model\Model.Horario.pas"/>
+        <DCCReference Include="_model\Model.Turma.pas"/>
+        <DCCReference Include="_model\Model.Entidade.pas"/>
+        <DCCReference Include="_model\Model.Materia.pas"/>
+        <DCCReference Include="_model\Model.Professor.pas"/>
+        <DCCReference Include="_model\Model.Lotacao.pas"/>
+        <DCCReference Include="_model\Model.Aula.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

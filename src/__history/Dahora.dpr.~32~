@@ -8,13 +8,7 @@ uses
   View.Utils in '_view\View.Utils.pas',
   Controller.Inicial in '_controller\Controller.Inicial.pas',
   Model.FileManager in '_model\Model.FileManager.pas',
-  Model.Horario in '_model\Model.Horario.pas',
-  Model.Turma in '_model\Model.Turma.pas',
-  Model.Entidade in '_model\Model.Entidade.pas',
-  Model.Materia in '_model\Model.Materia.pas',
-  Model.Professor in '_model\Model.Professor.pas',
-  Model.Lotacao in '_model\Model.Lotacao.pas',
-  Model.Aula in '_model\Model.Aula.pas';
+  Model.Horario in '_model\Model.Horario.pas';
 
 {$R *.res}
 

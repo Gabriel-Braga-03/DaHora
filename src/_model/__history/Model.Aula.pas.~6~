@@ -1,0 +1,19 @@
+unit Model.Aula;
+
+interface
+    uses Model.Entidade;
+
+    type
+        TAula = class (Tentidade)
+            private
+                Fordem: Byte;
+                Fds: Byte;
+                Flot_id: Word;
+            public
+                property ordem: Byte read Fordem write Fordem;
+                property ds: Byte read Fds write Fds;
+        end;
+
+implementation
+
+end.

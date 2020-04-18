@@ -1,0 +1,18 @@
+unit Model.Entidade;
+
+interface
+    uses System.Json;
+
+    type
+        TEntidade = class abstract
+            private
+                Fid: Word;
+            protected
+                property id: Word read Fid write Fid;
+                function toJsonObject(): TJsonObject; virtual; abstract;
+                function toJsonString(): String; virtual; abstract;
+        end;
+
+implementation
+
+end.

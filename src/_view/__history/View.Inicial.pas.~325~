@@ -84,7 +84,7 @@ var
 begin
     // Temporário para testes
     h := THorario.Create();
-    ShowMessage(h.saveWithJson());
+    ShowMessage(h);
 end;
 
 end.

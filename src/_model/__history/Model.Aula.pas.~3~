@@ -1,0 +1,14 @@
+unit Model.Aula;
+
+interface
+    uses Model.Entidade;
+
+    type
+        TAula = class (Tentidade)
+            private
+
+        end;
+
+implementation
+
+end.
