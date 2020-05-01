@@ -67,7 +67,7 @@ implementation
         if Length(Self.turmas) > 0 then new_id := Self.turmas[High(Self.turmas)].id + 1 else new_id := 1;
 
         // Aumentando tamanho do array
-        SetLength(Self.Fturmas, Length(Self.turmas) + 1);
+        SetLength(Self.turmas, Length(Self.turmas) + 1);
 
         // Inserindo
         Self.turmas[High(Self.turmas)] := TTurma.Create(new_id, serie, complemento);

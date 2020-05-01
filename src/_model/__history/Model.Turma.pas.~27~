@@ -21,11 +21,9 @@ interface
 implementation
 // TTurma (Implementações)
     // Método Construtor
-    constructor TTurma.Create(id: Word; serie: Byte; complemento: String);
+    constructor Create(id: Word; serie: Byte; complemento: String);
     begin
-        Self.id := id;
-        Self.serie := serie;
-        Self.complemento := complemento;
+
     end;
 
 end.

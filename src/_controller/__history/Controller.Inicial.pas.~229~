@@ -35,7 +35,7 @@ implementation
         Controller.Principal.horario.aulas_pd := aulas;
 
         // Salvando no arquivo
-        Controller.Principal.fm.write(Controller.Principal.horario.saveWithJson());
+        
     end;
 
 end.

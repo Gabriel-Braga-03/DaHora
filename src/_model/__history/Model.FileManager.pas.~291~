@@ -56,7 +56,7 @@ implementation
     // Métodos Set
     procedure TFileManager.setArqPath(path: String);
     begin
-        Assign(Self.arq, path);
+        Assign(arq, path);
         Self.arqPath := path;
     end;
     procedure TFileManager.setDirPath(path: String);

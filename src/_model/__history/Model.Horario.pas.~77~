@@ -57,20 +57,17 @@ implementation
         Result := TJson.ObjectToJsonObject(Self).Format();
     end;
 
-    // **CRUD*** Turma
-    // CREATE (Add)
+    // --CRUD-- Turma
     procedure Thorario.addTurma(serie: Byte; complemento: String);
     var
-        new_id: Word;
+        new_id: Word = 1;
     begin
         // Gerando id
-        if Length(Self.turmas) > 0 then new_id := Self.turmas[High(Self.turmas)].id + 1 else new_id := 1;
+        if Length(Self.turmas) > 0 then new_id := Self.turmas[High(Self.turmas) - 1].id + 1;
 
-        // Aumentando tamanho do array
-        SetLength(Self.Fturmas, Length(Self.turmas) + 1);
+        SetLength(Self.turmas, Length(Self.turmas) + 1);
 
-        // Inserindo
-        Self.turmas[High(Self.turmas)] := TTurma.Create(new_id, serie, complemento);
+        Self.turmas[High(Self.turmas)] := TTurma.Create(Self.turmas[High(Self.turmas) - 1].id + 1, serie, turm);
     end;
 
 end.

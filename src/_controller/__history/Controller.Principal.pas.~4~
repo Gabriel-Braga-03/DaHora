@@ -1,0 +1,17 @@
+unit Controller.Principal;
+
+interface
+    uses
+        Model.Horario,
+        Model.FileManager;
+
+    // Variáveis de Controle
+    var
+        fm: TFileManager;;
+
+    var
+        horario: THorario;
+
+implementation
+
+end.

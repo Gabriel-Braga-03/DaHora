@@ -1,6 +1,12 @@
 unit Controller.Inicial;
 
 interface
+    uses Model.FileManager;
+
+    // Variáveis de Controle
+    var
+        fm: TFileManager;
+
     // Rotinas de Controle
     procedure criarNovoArquivo(nome: String; aulas: Byte);
 
@@ -8,8 +14,7 @@ implementation
     uses 
         System.SysUtils,
         Controller.Principal,
-        Model.Horario,
-        Model.FileManager;
+        Model.Horario;
 
     // Implemetações
     procedure criarNovoArquivo(nome: String; aulas: Byte);
@@ -17,7 +22,7 @@ implementation
         arq_nome: String;
     begin
         // Criando instância de Gerenciador de Arquivos
-        Controller.Principal.fm := TFileManager.Create('_docs', true);
+        fm := TFileManager.Create('_docs', true);
 
         // Criando _docs se não existir
         if not fm.existDir() then fm.createDir();
@@ -26,16 +31,16 @@ implementation
         arq_nome := 'hor-'+ FormatDateTime('dd-mm-yyyy_hh-nn-ss', Now()) + '.json';
 
         // Criando o arquivo
-        Controller.Principal.fm.setArqPath('./_docs/'+ arq_nome);
-        Controller.Principal.fm.createArq();
+        fm.setArqPath('./_docs/'+ arq_nome);
+        fm.createArq();
 
         // Criando instância de objeto de Horário JSON
-        Controller.Principal.horario := THorario.Create();
+        Controller.Principal.horario := Controller.Principal.THorario.Create();
         Controller.Principal.horario.nome := nome;
         Controller.Principal.horario.aulas_pd := aulas;
 
         // Salvando no arquivo
-        Controller.Principal.fm.write(Controller.Principal.horario.saveWithJson());
+        
     end;
 
 end.

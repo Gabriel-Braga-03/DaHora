@@ -13,19 +13,8 @@ interface
                 // Propriedades
                 property serie: Byte read Fserie write Fserie;
                 property complemento: String read Fcomplemento write Fcomplemento;
-
-                // Método Construtor
-                constructor Create(id: Word; serie: Byte; complemento: String);
         end;
 
 implementation
-// TTurma (Implementações)
-    // Método Construtor
-    constructor TTurma.Create(id: Word; serie: Byte; complemento: String);
-    begin
-        Self.id := id;
-        Self.serie := serie;
-        Self.complemento := complemento;
-    end;
 
 end.

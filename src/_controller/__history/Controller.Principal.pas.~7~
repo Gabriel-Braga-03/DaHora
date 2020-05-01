@@ -1,0 +1,12 @@
+unit Controller.Principal;
+
+interface
+    uses Model.Horario;
+
+    // Variáveis de Controle
+    var
+        horario: THorario;
+
+implementation
+
+end.

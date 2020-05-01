@@ -25,7 +25,6 @@ implementation
     begin
         Self.id := id;
         Self.serie := serie;
-        Self.complemento := complemento;
     end;
 
 end.
